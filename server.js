@@ -25,4 +25,6 @@ io.on('connection', socket => {
 })
 
 let port = process.env.PORT || 3333 
-server.listen(port)
+server.listen(port, () => {
+    console.log(`Server listen on port ${port}`)
+})
